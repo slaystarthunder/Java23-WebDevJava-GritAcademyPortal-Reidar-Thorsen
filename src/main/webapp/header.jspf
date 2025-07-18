@@ -2,10 +2,10 @@
 <header>
     <nav>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
+            <li><a href="${pageContext.request.contextPath}/userPage.jsp">Home</a></li>
             <li><a href="${pageContext.request.contextPath}/hello-servlet">Courses</a></li>
-            <li><a href="${pageContext.request.contextPath}/students-servlet">Students</a></li>
-            <li><a href="${pageContext.request.contextPath}/students-courses-servlet">Students with Courses</a></li>
+            <li><a href="${pageContext.request.contextPath}/students-servlet-servlet">Students</a></li>
+            <li><a href="${pageContext.request.contextPath}/users-courses-servlet">Students with Courses</a></li>
             <c:if test="${sessionScope.username != null}">
                 <li><a href="${pageContext.request.contextPath}/user-dashboard">Dashboard</a></li>
                 <li><a href="${pageContext.request.contextPath}/logout">Logout</a></li>

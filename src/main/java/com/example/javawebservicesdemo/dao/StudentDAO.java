@@ -120,4 +120,21 @@ public class StudentDAO {
 
         return -1;
     }
+
+    public boolean validateStudent(String username, String password) {
+        Connection conn = DatabaseConnector.getConnection();
+        if (conn != null) {
+            String query = "SELECT * FROM students WHERE username = ? AND password = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(query)) {
+                stmt.setString(1, username);
+                stmt.setString(2, password);
+                ResultSet rs = stmt.executeQuery();
+                return rs.next();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
+
 }

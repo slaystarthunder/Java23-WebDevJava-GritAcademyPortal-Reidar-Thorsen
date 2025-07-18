@@ -38,7 +38,7 @@ public class AddCourseServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
         out.println("<h2>Course successfully added!</h2>");
-        out.println("<a href=\"student-dashboard.jsp\">Back to Dashboard</a>");
+        out.println("<a href=\"userPage.jsp\">Back to Dashboard</a>");
         out.println("<a href=\"logout\">Logout</a>");
         out.println("</body>");
         out.println("</html>");
@@ -66,7 +66,7 @@ public class AddCourseServlet extends HttpServlet {
         out.println("<input type=\"number\" id=\"yhp\" name=\"yhp\" required><br><br>");
         out.println("<input type=\"submit\" value=\"Add Course\">");
         out.println("</form>");
-        out.println("<a href=\"student-dashboard.jsp\">Back to Dashboard</a>");
+        out.println("<a href=\"userPage.jsp\">Back to Dashboard</a>");
         out.println("<a href=\"logout\">Logout</a>");
         out.println("</body>");
         out.println("</html>");

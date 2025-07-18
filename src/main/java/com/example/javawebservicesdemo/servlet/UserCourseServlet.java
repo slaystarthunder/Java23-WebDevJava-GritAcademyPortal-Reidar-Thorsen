@@ -43,7 +43,7 @@ public class UserCourseServlet extends HttpServlet {
                 resultMessage.append("</ul>");
             }
 
-            resultMessage.append("<a href='index.html'>Home</a>");
+            resultMessage.append("<a href='userPage.jsp'>Home</a>");
             resultMessage.append("</body></html>");
             out.println(resultMessage.toString());
         } else {
